@@ -1,0 +1,50 @@
+#toggle-theme {
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  position: relative;
+}
+
+#toggle-theme.theme-light {
+  background-color: #d0d0d0;
+}
+
+#toggle-theme.theme-dark {
+  background-color: #2d3047;
+  border: 1px solid #fff;
+}
+
+#toggle-theme input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#toggle-theme.theme-light #slider {
+  left: 5px;
+  background-color: #fff;
+}
+
+#toggle-theme.theme-dark #slider {
+  left: 55%;
+  background-color: #fff;
+}
+
+#toggle-theme #slider {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/*# sourceMappingURL=toggle.css.map */

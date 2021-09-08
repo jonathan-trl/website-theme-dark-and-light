@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$dark: #2d3047;
+$light: #f5e9e2;
+$font-primary: "Montserrat";
+
+.theme-dark,
+.theme-light {
+  transition: all 0.5s;
+}
+
+body.theme-dark {
+  background-color: $dark;
+
+  a.theme-dark,
+  h1.theme-dark {
+    color: $light;
+    transition: color 0.3s;
+  }
+
+  button.theme-dark {
+    border: 1px solid $light;
+    color: $light;
+  }
+  button.theme-dark:hover {
+    background-color: $light;
+    color: $dark;
+    border: 1px solid $light;
+  }
+}
+
+body.theme-light {
+  background-color: $light;
+
+  a.theme-light,
+  h1.theme-light {
+    color: $dark;
+  }
+
+  button.theme-light {
+    border: 1px solid $dark;
+  }
+  button.theme-light:hover {
+    background-color: $dark;
+    color: $light;
+    border: 1px solid $dark;
+  }
+}

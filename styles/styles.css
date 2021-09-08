@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.theme-dark,
+.theme-light {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body.theme-dark {
+  background-color: #2d3047;
+}
+
+body.theme-dark a.theme-dark,
+body.theme-dark h1.theme-dark {
+  color: #f5e9e2;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+body.theme-dark button.theme-dark {
+  border: 1px solid #f5e9e2;
+  color: #f5e9e2;
+}
+
+body.theme-dark button.theme-dark:hover {
+  background-color: #f5e9e2;
+  color: #2d3047;
+  border: 1px solid #f5e9e2;
+}
+
+body.theme-light {
+  background-color: #f5e9e2;
+}
+
+body.theme-light a.theme-light,
+body.theme-light h1.theme-light {
+  color: #2d3047;
+}
+
+body.theme-light button.theme-light {
+  border: 1px solid #2d3047;
+}
+
+body.theme-light button.theme-light:hover {
+  background-color: #2d3047;
+  color: #f5e9e2;
+  border: 1px solid #2d3047;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+header #logo {
+  font-size: 25pt;
+  font-weight: bold;
+}
+
+header ul li {
+  margin: 0 20px;
+}
+
+header ul li a {
+  font-weight: 500;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60%;
+  text-align: center;
+}
+
+section h1 {
+  margin-bottom: 40px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  border-radius: 20px;
+  width: 125px;
+  height: 40px;
+  font-size: 13pt;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 1300px) {
+  nav a,
+  nav ul,
+  #toggle-wrapper {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  nav ul {
+    margin: 20px 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
